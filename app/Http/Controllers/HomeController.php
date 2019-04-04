@@ -1,0 +1,39 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        return view('/');
+    }
+
+    public function landing_page_company()
+    {
+        return view('welcome-company');
+    }
+
+    public function jobsearch()
+    {
+        return view('search-result');
+    }
+
+    public function talentSearch()
+    {
+        return view('search-result-talent');
+    }
+}
